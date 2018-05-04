@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contacts</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'exampleApp/index' %>
+    <%= stylesheet_pack_tag 'exampleApp/assets/stylesheets/app' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
