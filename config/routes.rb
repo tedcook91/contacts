@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   root to: "pages#root"
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace "api" do
+    namespace "v1" do
+      resources :contacts
+
+      get "/contacts", to: "contacts#index"
+
+      post "/contacts", to: "contacts#create"
+    end
+  end
 end
